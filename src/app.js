@@ -8,6 +8,7 @@ const start = async () => {
   const { host, port } = config.app;
 
   app.listen(port, host, () => {
+    console.log('Testing CI/CD Automation Flow...');
     console.log(`server start at http://${host}:${port}`);
   });
 };
