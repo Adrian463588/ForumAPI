@@ -9,7 +9,7 @@ describe('GET /hello endpoint', () => {
   });
 
   describe('when GET /hello is requested', () => {
-    it('should return 200 and hello world message (Intentionally Failing Test)', async () => {
+    it('should return 200 and hello world message (Successful Test)', async () => {
       // Arrange
       const app = await createServer(container);
 
@@ -18,8 +18,7 @@ describe('GET /hello endpoint', () => {
 
       // Assert
       expect(response.status).toEqual(200);
-      // Intentional failure: expecting 'fail' when it returns 'success'
-      expect(response.body.status).toEqual('fail');
+      expect(response.body.status).toEqual('success');
       expect(response.body.message).toEqual('Hello World!');
     });
   });
