@@ -2,27 +2,23 @@ name: Continuous Deployment
 
 on:
   push:
-    branches:
-      - main
-      - master
+    branches: [ "master", "main" ]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Deploy to GCP Compute Engine
-        uses: appleboy/ssh-action@v1
+      - name: SSH and Deploy
+        uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.GCP_HOST }}
-          username: ${{ secrets.GCP_USERNAME }}
-          key: ${{ secrets.GCP_SSH_KEY }}
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
           script: |
-            cd ~/forum-api
-            git pull origin main
-            npm ci --production
+            cd /home/${{ secrets.SSH_USERNAME }}/forum-api
+            git pull origin master
+            npm ci --omit=dev --no-audit --no-fund
             npm run migrate up
-            pm2 restart forum-api || pm2 start src/app.js --name forum-api
+            pm2 restart forum-api
