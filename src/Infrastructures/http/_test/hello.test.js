@@ -22,4 +22,19 @@ describe('GET /hello endpoint', () => {
       expect(response.body.message).toEqual('Hello World!');
     });
   });
+
+  describe('when GET /ping is requested', () => {
+    it('should return 200 and pong message', async () => {
+      // Arrange
+      const app = await createServer(container);
+
+      // Action
+      const response = await request(app).get('/ping');
+
+      // Assert
+      expect(response.status).toEqual(200);
+      expect(response.body.status).toEqual('success');
+      expect(response.body.message).toEqual('pong');
+    });
+  });
 });
