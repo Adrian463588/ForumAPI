@@ -22,6 +22,13 @@ const createServer = async (container) => {
   app.use('/threads/:threadId/comments/:commentId/replies', replies(container));
   app.use('/threads/:threadId/comments/:commentId/likes', likes(container));
 
+  app.get('/hello', (req, res) => {
+    res.status(200).json({
+      status: 'success',
+      message: 'Hello World',
+    });
+  });
+
   // Global error handler
   app.use((error, req, res, _next) => {
     // bila response tersebut error, tangani sesuai kebutuhan
