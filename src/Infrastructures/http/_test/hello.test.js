@@ -1,7 +1,7 @@
 import request from 'supertest';
-import createServer from '../../createServer.js';
-import container from '../../../container.js';
-import pool from '../../../database/postgres/pool.js';
+import createServer from '../createServer.js';
+import container from '../../container.js';
+import pool from '../../database/postgres/pool.js';
 
 describe('GET /hello endpoint', () => {
   afterAll(async () => {
