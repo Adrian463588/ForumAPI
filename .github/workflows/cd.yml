@@ -18,7 +18,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd /home/${{ secrets.SSH_USERNAME }}/forum-api
-            git pull origin master
+            git pull origin main
             npm ci --omit=dev --no-audit --no-fund
             npm run migrate up
             pm2 restart forum-api
