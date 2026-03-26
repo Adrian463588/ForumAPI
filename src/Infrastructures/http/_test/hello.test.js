@@ -19,7 +19,7 @@ describe('GET /hello endpoint', () => {
       // Assert
       expect(response.status).toEqual(200);
       expect(response.body.status).toEqual('success');
-      expect(response.body.message).toEqual('Hello World!');
+      expect(response.body.message).toEqual('Hello World');
     });
   });
 
