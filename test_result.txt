@@ -1,0 +1,73 @@
+﻿
+[1m[46m RUN [49m[22m [36mv4.0.17 [39m[90mD:/Dicoding/Menjadi Back-End Developer Expert dengan JavaScript/Forum-API/forum-api-starter-project/forum-api-starter-project[39m
+
+ [32m✓[39m src/Domains/authentications/_test/AuthenticationRepository.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32m✓[39m src/Applications/use_case/_test/GetThreadDetailUseCase.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 13[2mms[22m[39m
+ [32m✓[39m src/Domains/users/entities/_test/RegisterUser.test.js [2m([22m[2m5 tests[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32m✓[39m src/Applications/use_case/_test/DeleteAuthenticationUseCase.test.js [2m([22m[2m3 tests[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32m✓[39m src/Applications/use_case/_test/LogoutUserUseCase.test.js [2m([22m[2m3 tests[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32m✓[39m src/Applications/use_case/_test/RefreshAuthenticationUseCase.test.js [2m([22m[2m3 tests[22m[2m)[22m[32m 16[2mms[22m[39m
+ [32m✓[39m src/Applications/use_case/_test/AddReplyUseCase.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32m✓[39m src/Applications/use_case/_test/AddUserUseCase.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32m✓[39m src/Infrastructures/security/_test/JwtTokenManager.test.js [2m([22m[2m5 tests[22m[2m)[22m[32m 25[2mms[22m[39m
+ [32m✓[39m src/Applications/use_case/_test/LoginUserUseCase.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32m✓[39m src/Infrastructures/security/_test/BcryptPasswordHash.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 100[2mms[22m[39m
+ [32m✓[39m src/Infrastructures/repository/_test/AuthenticationRepositoryPostgres.test.js [2m([22m[2m4 tests[22m[2m)[22m[32m 162[2mms[22m[39m
+ [31m❯[39m src/Infrastructures/security/_test/BcryptEncryptionHelper.test.js [2m([22m[2m3 tests[22m[2m | [22m[31m2 failed[39m[2m)[22m[32m 183[2mms[22m[39m
+       [32m✓[39m should encrypt password correctly[32m 103[2mms[22m[39m
+[31m       [31m×[31m should throw AuthenticationError if password not match[39m[32m 9[2mms[22m[39m
+[31m       [31m×[31m should not return AuthenticationError if password match[39m[32m 67[2mms[22m[39m
+ [32m✓[39m src/Infrastructures/repository/_test/UserRepositoryPostgres.test.js [2m([22m[2m8 tests[22m[2m)[22m[32m 204[2mms[22m[39m
+ [32m✓[39m src/Applications/security/_test/AuthenticationTokenManager.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32m✓[39m src/Domains/comments/entities/_test/AddedComment.test.js [2m([22m[2m3 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m src/Domains/users/entities/_test/UserLogin.test.js [2m([22m[2m3 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32m✓[39m src/Domains/threads/entities/_test/NewThread.test.js [2m([22m[2m4 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m src/Applications/use_case/_test/DeleteReplyUseCase.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32m✓[39m src/Applications/use_case/_test/AddThreadUseCase.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32m✓[39m src/Domains/comments/_test/CommentRepository.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32m✓[39m src/Domains/users/_test/UserRepository.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32m✓[39m src/Domains/threads/entities/_test/AddedThread.test.js [2m([22m[2m3 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m src/Domains/replies/_test/ReplyRepository.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m src/Domains/users/entities/_test/RegisteredUser.test.js [2m([22m[2m3 tests[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32m✓[39m src/Domains/replies/entities/_test/AddedReply.test.js [2m([22m[2m3 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m src/Domains/replies/entities/_test/NewReply.test.js [2m([22m[2m3 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m src/Domains/comments/entities/_test/NewComment.test.js [2m([22m[2m3 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m src/Domains/authentications/entities/_test/NewAuth.test.js [2m([22m[2m3 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m src/Commons/exceptions/_test/DomainErrorTranslator.test.js [2m([22m[2m2 tests[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32m✓[39m src/Applications/security/_test/PasswordHash.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32m✓[39m src/Applications/use_case/_test/AddCommentUseCase.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32m✓[39m src/Applications/use_case/_test/DeleteCommentUseCase.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32m✓[39m src/Domains/threads/_test/ThreadRepository.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m src/Commons/exceptions/_test/AuthorizationError.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m src/Commons/exceptions/_test/AuthenticationError.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m src/Commons/exceptions/_test/InvariantError.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m src/Commons/exceptions/_test/NotFoundError.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m src/Commons/exceptions/_test/ClientError.test.js [2m([22m[2m1 test[22m[2m)[22m[32m 3[2mms[22m[39m
+ [31m❯[39m src/Infrastructures/http/_test/createServer.test.js [2m([22m[2m21 tests[22m[2m | [22m[31m2 failed[39m[2m)[22m[33m 621[2mms[22m[39m
+[31m     [31m×[31m should response 404 when request unregistered route[39m[32m 61[2mms[22m[39m
+       [32m✓[39m should response 201 and persisted user[32m 95[2mms[22m[39m
+       [32m✓[39m should response 400 when request payload not contain needed property[32m 6[2mms[22m[39m
+       [32m✓[39m should response 400 when request payload not meet data type specification[32m 6[2mms[22m[39m
+       [32m✓[39m should response 400 when username more than 50 character[32m 6[2mms[22m[39m
+       [32m✓[39m should response 400 when username contain restricted character[32m 6[2mms[22m[39m
+       [32m✓[39m should response 400 when username unavailable[32m 7[2mms[22m[39m
+       [32m✓[39m should response 201 and new authentication[32m 127[2mms[22m[39m
+       [32m✓[39m should response 400 if username not found[32m 7[2mms[22m[39m
+       [32m✓[39m should response 401 if password wrong[32m 123[2mms[22m[39m
+       [32m✓[39m should response 400 if login payload not contain needed property[32m 5[2mms[22m[39m
+       [32m✓[39m should response 400 if login payload wrong data type[32m 4[2mms[22m[39m
+       [32m✓[39m should return 200 and new access token[32m 129[2mms[22m[39m
+       [32m✓[39m should return 400 payload not contain refresh token[32m 5[2mms[22m[39m
+       [32m✓[39m should return 400 if refresh token not string[32m 5[2mms[22m[39m
+       [32m✓[39m should return 400 if refresh token not valid[32m 5[2mms[22m[39m
+       [32m✓[39m should return 400 if refresh token not registered in database[32m 6[2mms[22m[39m
+       [32m✓[39m should response 200 if refresh token valid[32m 7[2mms[22m[39m
+       [32m✓[39m should response 400 if refresh token not registered in database[32m 6[2mms[22m[39m
+       [32m✓[39m should response 400 if payload not contain refresh token[32m 4[2mms[22m[39m
+[31m     [31m×[31m should handle server error correctly[39m[32m 2[2mms[22m[39m
+
+[2m Test Files [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m38 passed[39m[22m[90m (40)[39m
+[2m      Tests [22m [1m[31m4 failed[39m[22m[2m | [22m[1m[32m102 passed[39m[22m[90m (106)[39m
+[2m   Start at [22m 12:12:03
+[2m   Duration [22m 2.98s[2m (transform 2.95s, setup 1.38s, import 6.62s, tests 1.60s, environment 15ms)[22m
+
