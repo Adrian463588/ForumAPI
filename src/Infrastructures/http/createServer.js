@@ -29,6 +29,13 @@ const createServer = async (container) => {
     });
   });
 
+  app.get('/ping', (req, res) => {
+    res.status(200).json({
+      status: 'success',
+      message: 'pong',
+    });
+  });
+
   // Global error handler
   app.use((error, req, res, _next) => {
     // bila response tersebut error, tangani sesuai kebutuhan
