@@ -5,6 +5,7 @@ import path from 'path';
 if (process.env.NODE_ENV === 'test') {
   dotenv.config({
     path: path.resolve(process.cwd(), '.test.env'),
+    override: true,
   });
 } else {
   dotenv.config();
